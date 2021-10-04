@@ -1,0 +1,23 @@
+{
+  "name": "meet.js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-tester": "^5.0.0",
+    "jest": "^22.4.2",
+    "prettier": "^1.13.4"
+  },
+  "jest": {
+    "testURL": "http://localhost"
+  },
+  "scripts": {
+    "run": "node ./src/runTransform.js"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
+}
