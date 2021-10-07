@@ -5,7 +5,7 @@ const fs = require('fs')
 const oldFileContent = fs.readFileSync('./example/oldCode.test.js')
 
 const result = babel.transform(oldFileContent, {
-  plugins: [['./src/index.js']]
+  plugins: [['./src/babel-codemod/index.js']]
 }).code
 
 fs.writeFileSync(

@@ -8,7 +8,6 @@ const functionsToStringsReplace = {
 
 module.exports = function() {
   return {
-    manipulateOptions(options, parserOptions) {},
     visitor: {
       Program(path) {
         Object.values(functionsToStringsReplace).forEach((constant) => {

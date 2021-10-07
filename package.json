@@ -1,19 +1,22 @@
 {
   "name": "meet.js",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/babel-codemod/index.js",
   "license": "MIT",
   "devDependencies": {
+    "ast-types": "^0.14.2",
     "babel-core": "^6.26.0",
     "babel-plugin-tester": "^5.0.0",
     "jest": "^22.4.2",
-    "prettier": "^1.13.4"
+    "prettier": "^1.13.4",
+    "recast": "^0.20.5"
   },
   "jest": {
     "testURL": "http://localhost"
   },
   "scripts": {
-    "run": "node ./src/runTransform.js"
+    "runBabel": "node src/babel-codemod/runBabelTransform.js",
+    "runRecast": "node src/recast/runRecast.js"
   },
   "prettier": {
     "tabWidth": 2,
