@@ -1,10 +1,5 @@
 const t = require('babel-core').types
-
-const functionsToStringsReplace = {
-  isRed: 'RED',
-  isGreen: 'GREEN',
-  isBlue: 'BLUE'
-}
+const { functionsToStringsReplace } = require('../common')
 
 module.exports = function() {
   return {

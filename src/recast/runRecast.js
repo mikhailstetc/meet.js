@@ -1,12 +1,7 @@
 const recast = require('recast')
 const { visit, builders, namedTypes } = require('ast-types')
 const fs = require('fs')
-
-const functionsToStringsReplace = {
-  isRed: 'RED',
-  isGreen: 'GREEN',
-  isBlue: 'BLUE'
-}
+const { functionsToStringsReplace } = require('../common')
 
 const oldFileContent = fs.readFileSync('./example/oldCode.test.js')
 
